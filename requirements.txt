@@ -1,0 +1,5 @@
+nixtlats
+pandas
+plotly
+python-dotenv
+scikit-learn
