@@ -1,4 +1,5 @@
 {
-    "terminal.integrated.shellArgs.linux": ["-c", "source env/bin/activate; exec $SHELL"],
-    "terminal.integrated.shellArgs.osx": ["-c", "source env/bin/activate; exec $SHELL"]
-  }
+  "terminal.integrated.shellArgs.linux": ["-c", "source env/bin/activate; exec $SHELL"],
+  "terminal.integrated.shellArgs.osx": ["-c", "source env/bin/activate; exec $SHELL"],
+  "python.pythonPath": "./env/bin/python"
+}

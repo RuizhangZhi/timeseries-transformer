@@ -1,15 +1,15 @@
-# Importing necessary modules.
+import os
+from dotenv import load_dotenv
 import pandas as pd  
-from nixtlats import TimeGPT  # Importing the TimeGPT class from nixtlats library.
+from nixtlats import TimeGPT
 
 # Initializing the `TimeGPT` class with a token from the environment variable.
-timegpt = TimeGPT(token='YOUR-TIMEGPT_TOKEN') #https://dashboard.nixtla.io
-
-# Check if the token provided is valid.
+load_dotenv()
+MY_SECRET_KEY = os.environ.get('MY_NIXTLA_SECRET_KEY')
+timegpt = TimeGPT(token=MY_SECRET_KEY) 
 if timegpt.validate_token():
-    print("Token validation successful!")  # Token is valid.
+    print("Token validation successful!")
 else:
-    # Raise an exception if token validation fails.
     raise Exception("Token validation failed! Please check go to https://dashboard.nixtla.io/ to get your token.")
 
 # Loading the air passengers dataset from a remote URL as an example
