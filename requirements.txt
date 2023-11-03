@@ -1,5 +1,7 @@
+nbformat>=4.2.0
 nixtlats
 pandas
 plotly
 python-dotenv
 scikit-learn
+statsmodels
